@@ -1,0 +1,7 @@
+[
+    {
+        "model": "deepseek-r1:1.5b",
+        "api_key": "NULL",
+        "base_url": "http://localhost:11434/v1/chat/completions"
+    }
+]
