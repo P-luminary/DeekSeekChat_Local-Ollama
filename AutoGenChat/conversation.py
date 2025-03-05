@@ -1,11 +1,7 @@
-# conversation.py
 from AutoGenChat.autogen_client import chat_with_autogen
 
-
 def start_conversation():
-    messages = [
-        {"role": "system", "content": "你是一个智能助手，可以调用 API 获取信息"}
-    ]
+    messages = [{"role": "system", "content": "你是一个智能助手，可以调用 API 获取信息"}]
 
     while True:
         try:

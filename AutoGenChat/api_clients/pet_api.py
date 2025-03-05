@@ -1,12 +1,12 @@
 import requests
+from ..config import EXTERNAL_API_KEY
 
-# 调用天猫宠物API获取宠物信息
-def get_pet_info(api_key, pet_name=None, pet_type=None, page=1, num=5):
-    url = f"https://apis.tianapi.com/pet/index?key={api_key}&page={page}&num={num}"
+def get_pet_info(pet_name=None, pet_type=None, page=1, num=5):
+    """调用天行数据宠物 API 获取宠物信息"""
+    url = f"https://apis.tianapi.com/pet/index?key={EXTERNAL_API_KEY}&page={page}&num={num}"
 
     if pet_name:
         url += f"&name={pet_name}"
-
     if pet_type is not None:
         url += f"&type={pet_type}"
 
